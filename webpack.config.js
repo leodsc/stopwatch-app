@@ -41,8 +41,13 @@ const settings = {
   plugins: [HTMLWebpackPluginConfig],
   resolve: {
     alias: {
-      '@src/assets': new URL('./src/assets', import.meta.url).pathname
+      '@src/assets': new URL('./src/assets', import.meta.url).pathname,
+      '@src/apis': new URL('./src/apis', import.meta.url).pathname,
+      '@src/components': new URL('./src/components', import.meta.url).pathname
     }
+  },
+  devServer: {
+    historyApiFallback: true
   }
 }
 

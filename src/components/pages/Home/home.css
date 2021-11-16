@@ -3,10 +3,10 @@
 :root {
 	--clr-brown: #968E85;
 	--clr-green: #8CC084;
-	--clr-light-red: #FFCAB1;
+	--clr-light-green: #E6EBE0;
 	--btn-confirm: #3FD99B;
 	--btn-cancel: #FF535B;
-	font-family: 'Ropa-sans', sans-serif;
+	--link-color: #18A0FB;
 	font-size: 16px;
 }
 
@@ -17,7 +17,8 @@
 }
 
 body {
-	background-color: var(--clr-light-red);
+	background-color: var(--clr-light-green);
+	font-family: 'Ropa-sans', sans-serif;
 }
 
 button {
@@ -40,6 +41,15 @@ button.cancel {
 
 button.info {
 	background-color: var(--clr-brown);
+}
+
+input {
+	width: 20rem;
+	padding: 0.5rem 1rem;
+	font-size: 1.25rem;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px 3px rgba(0,0,0,0.2);
 }
 
 header {
