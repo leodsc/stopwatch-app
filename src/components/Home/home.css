@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+:root {
+	--clr-brown: #968E85;
+	--clr-green: #8CC084;
+	--clr-light-red: #FFCAB1;
+	--btn-confirm: #3FD99B;
+	--btn-cancel: #FF535B;
+	font-family: 'Ropa-sans', sans-serif;
+	font-size: 16px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--clr-light-red);
+}
+
+button {
+	border: none;
+	padding: 0.5rem 1.25rem;
+	cursor: pointer;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	color: white;
+	border-radius: 5px;
+}
+
+button.confirm {
+	background-color: var(--btn-confirm);
+}
+
+button.cancel {
+	background-color: var(--btn-cancel);
+}
+
+button.info {
+	background-color: var(--clr-brown);
+}
+
+header {
+	background-color: var(--clr-brown);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1.5rem 0.75rem;
+}
+
+header p {
+	font-size: 2.5rem;
+	color: white;
+	letter-spacing: 5px;
+}
+
+main.home-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+main.home-page button {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+

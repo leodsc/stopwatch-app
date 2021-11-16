@@ -27,10 +27,23 @@ const settings = {
             loader: "html-loader"
           }
         ]
-      }
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
     ]
   },
-  plugins: [HTMLWebpackPluginConfig]
+  plugins: [HTMLWebpackPluginConfig],
+  resolve: {
+    alias: {
+      '@src/assets': new URL('./src/assets', import.meta.url).pathname
+    }
+  }
 }
 
 export default settings;
