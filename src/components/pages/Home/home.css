@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
 :root {
-	--clr-brown: #968E85;
+	--clr-orange: #DA7635;
 	--clr-green: #8CC084;
 	--clr-light-green: #E6EBE0;
+	--clr-light-blue: #367CFF;
+	--clr-darker-blue: #1D3354;
 	--btn-confirm: #3FD99B;
 	--btn-cancel: #FF535B;
 	--link-color: #18A0FB;
@@ -40,7 +42,7 @@ button.cancel {
 }
 
 button.info {
-	background-color: var(--clr-brown);
+	background-color: var(--clr-orange);
 }
 
 input {
@@ -53,11 +55,12 @@ input {
 }
 
 header {
-	background-color: var(--clr-brown);
+	background-color: var(--clr-orange);
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 1.5rem 0.75rem;
+	margin-bottom: 2rem;
 }
 
 header p {

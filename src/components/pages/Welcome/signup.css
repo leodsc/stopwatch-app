@@ -1,0 +1,42 @@
+#signup-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bubble-ctn {
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+}
+
+.bubble {
+	position: relative;
+	border-radius: 100%;
+}
+
+.bubble.small {
+}
+
+.bubble.medium {
+}
+
+.bubble.large {
+}
+
+.bubble.darker-blue {
+	width: 400px;
+	height: 400px;
+	background-color: var(--clr-darker-blue);
+	z-index: -3;
+	bottom: 18rem;
+	right: 8rem;
+}
+
+.bubble.light-blue {
+	width: 250px;
+	height: 250px;
+	right: 5rem;
+	background-color: var(--clr-light-blue);
+	z-index: -2;
+}

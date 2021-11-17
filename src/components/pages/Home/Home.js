@@ -4,14 +4,14 @@ import WeeklySVG from '@src/assets/Weekend.svg';
 import MonthlySVG from '@src/assets/Month View.svg';
 import "./home.css";
 
+const AppContext = React.createContext();
+
 const Home = () => {
+  const [userCookie, setUserCookie] = useState(null);
+
   return (
-    <>
-    <header>
-      <ClockSVG />
-      <p>Stopwatch</p>
-    </header>
-    <main className="home-page">
+    <AppContext.Provider>
+        <main className="home-page">
         <button className="info">
           <WeeklySVG />
           Semanal
@@ -20,9 +20,9 @@ const Home = () => {
           <MonthlySVG />
           Mensal
         </button>
-      <Tarefas />
-    </main>
-    </>
+        <Tarefas />
+      </main>
+    </AppContext.Provider>
   )
 }
 

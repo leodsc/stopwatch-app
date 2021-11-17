@@ -1,4 +1,4 @@
-#welcome-page {
+.welcome-page {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -6,12 +6,12 @@
 	gap: 2rem;
 }
 
-#welcome-page p {
+.welcome-page p {
 	font-size: 1.25rem;
 	color: rgba(33,33,33,0.75);
 }
 
-#welcome-page .create-acc {
+.welcome-page .create-acc {
 	display: block;
 	color: var(--link-color); 
 	cursor: pointer;
@@ -55,3 +55,12 @@
 .remember .move-in {
 	transform: translateX(100%);
 }
+
+/* sign up */
+
+.welcome-page.signup {
+	transform: scale(0);
+	transition: all 500ms;
+	height: 0;
+}
+
