@@ -1,9 +1,7 @@
-import React, {useState, useRef} from 'react';
-import WelcomeSVG from '@src/assets/welcome.svg';
-import SignupSVG from '@src/assets/signup.svg';
+import React, {useState, useRef, useEffect} from 'react';
+import WelcomeSVG from '@assets/welcome.svg';
 
-import './signup.css';
-import './welcome.css';
+import './login.css';
 
 const Welcome = () => {
 	const welcome = useRef(null);
@@ -12,14 +10,10 @@ const Welcome = () => {
 
 	return (
 		<main>
-			{currentPage == 'login' && <section ref={welcome} className="welcome-page">
+			{<section ref={welcome} className="welcome-page">
 				<WelcomeSVG />
 				<p>Digite seu e-mail e senha para entrar ou 
-					<span onClick={() => {
-						welcome.current.classList.add('signup');
-						setTimeout(() => {
-							setCurrentPage('signup');
-						}, 500)}}
+					<span onClick={() => window.location.href = "/cadastrar"}
 					className="create-acc">crie uma conta.</span>
 				</p>
 				<input type="email" placeholder="Email"/>
@@ -27,7 +21,6 @@ const Welcome = () => {
 				<Remember status={status} setStatus={setStatus} />
 				<button className="confirm">Entrar</button>
 			</section>}
-			{currentPage == 'signup' && <Signup />} 
 		</main>
 	)
 }
@@ -55,25 +48,20 @@ const Remember = (props) => {
 	)
 }
 
-const Signup = () => {
-	return (
-		<section id="signup-page">
-			<SignupSVG />
-			<div className="bubble-ctn">
-				<div className="bubble light-blue"></div>
-				<div className="bubble darker-blue"></div>
-			</div>
-			<h2>Cadastre-se</h2>
-			<p>E veja o quanto se dedica a cada tarefa ao longo do seu dia!</p>
-			<form>
-				<input placeholder="Nome"/>
-				<input placeholder="Email" type="email"/>
-				<input placeholder="Senha" type="password"/>
-				<input placeholder="Confirmar Senha" type="password"/>
-				<button className="confirm">Cadastrar</button>
-			</form>
-		</section>
-	)
-}
+// const useMessage = (status) => {
+// 	const message = {
+// 		status: false,
+// 		type: '',
+// 		content: ''
+// 	}
+
+// 	const setMessage = (status=false, type='', content='') => {
+// 		message.status = status;
+// 		message.type = type;
+// 		message.content = content;
+// 	}
+
+// 	return [message, setMessage];
+// }
 
 export default Welcome;

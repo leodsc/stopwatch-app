@@ -83,3 +83,18 @@ main.home-page button {
 	gap: 1.5rem;
 }
 
+.message {
+	padding: 0.5rem 1rem;
+	letter-spacing: 1px;
+	text-weight: 500;
+	color: white;
+	border-radius: 5px;
+}
+
+.message.error {
+	background-color: var(--btn-cancel);
+}
+
+.message.ok {
+	background-color: var(--btn-confirm);
+}

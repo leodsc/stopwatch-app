@@ -59,8 +59,7 @@
 /* sign up */
 
 .welcome-page.signup {
-	transform: scale(0);
+	transform: translateX(100%);
 	transition: all 500ms;
-	height: 0;
 }
 

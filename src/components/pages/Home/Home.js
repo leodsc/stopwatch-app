@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import ClockSVG from "@src/assets/Countdown Clock.svg";
-import WeeklySVG from '@src/assets/Weekend.svg';
-import MonthlySVG from '@src/assets/Month View.svg';
+import ClockSVG from "@assets/Countdown Clock.svg";
+import WeeklySVG from '@assets/Weekend.svg';
+import MonthlySVG from '@assets/Month View.svg';
 import "./home.css";
 
 const AppContext = React.createContext();

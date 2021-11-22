@@ -1,5 +1,5 @@
 import React from 'react';
-import ClockSVG from '@src/assets/Countdown Clock.svg';
+import ClockSVG from '@assets/Countdown Clock.svg';
 
 const Header = () => {
   return (
