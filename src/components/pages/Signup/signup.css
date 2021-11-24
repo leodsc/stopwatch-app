@@ -1,7 +1,22 @@
 #signup-page {
-	display: lex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
+	gap: 1rem;
+}
+
+#signup-page form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+#signup-page .subtitle {
+	width: 80%;
+	color: #222;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
 }
 
 .bubble-ctn {
@@ -39,4 +54,14 @@
 	right: 5rem;
 	background-color: var(--clr-light-blue);
 	z-index: -2;
+}
+
+p.input-info.wrong {
+	font-weight: 600;
+	color: var(--btn-cancel);
+}
+
+p.input-info.right {
+	font-weight: 600;
+	color: var(--btn-confirm);
 }
