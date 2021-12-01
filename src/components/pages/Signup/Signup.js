@@ -93,7 +93,9 @@ const Signup = () => {
 				status: true,
 				type: 'error',
 				content: response.content
-			});
+			})
+		} else {
+			window.location.href = '/entrar';
 		}
 	}
 
